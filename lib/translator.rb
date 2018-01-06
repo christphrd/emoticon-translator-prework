@@ -17,7 +17,11 @@ def load_library(yml)
 end
 
 def get_japanese_emoticon(yml,emoticon)
-  load_library(yml)["get_emoticon"][emoticon]
+  if load_library(yml)["get_emoticon"][emoticon]
+    return load_library(yml)["get_emoticon"][emoticon]
+  else
+    "Sorry, that emoticon was not found"
+  end
 end
 
 def get_english_meaning
