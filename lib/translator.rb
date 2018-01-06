@@ -17,8 +17,9 @@ def load_library(yml)
 end
 
 def get_japanese_emoticon(yml,emoticon)
-  if load_library(yml)["get_emoticon"][emoticon]
-    load_library(yml)["get_emoticon"][emoticon]
+  lib_hash = load_library(yml)
+  if lib_hash["get_emoticon"][emoticon]
+    lib_hash["get_emoticon"][emoticon]
   else
     "Sorry, that emoticon was not found"
   end
