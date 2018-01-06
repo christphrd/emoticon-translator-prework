@@ -2,6 +2,7 @@ require "yaml"
 require "pry"
 
 def load_library(yml)
+  #meaning => [eng_emo,jap_emo]
   emoticon = YAML.load_file(yml)
 end
 
