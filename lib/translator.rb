@@ -25,6 +25,9 @@ def get_japanese_emoticon(yml,emoticon)
   end
 end
 
-def get_english_meaning
-  # code goes here
+def get_english_meaning(yml,emoticon)
+  lib_hash = load_library(yml)
+  if lib_hash
+    
+  end
 end
