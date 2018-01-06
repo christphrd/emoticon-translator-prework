@@ -1,7 +1,7 @@
 require "yaml"
 
-def load_library(thing)
-  emoticon = YAML.load_file(thing)
+def load_library(yml)
+  emoticon = YAML.load_file(yml)
   puts emoticon.inspect
 end
 
