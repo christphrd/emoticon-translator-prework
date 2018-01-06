@@ -30,6 +30,6 @@ def get_english_meaning(yml,emoticon)
   if lib_hash["get_meaning"][emoticon]
     lib_hash["get_meaning"][emoticon]
   else
-    "Sorry"
+    "Sorry, that emoticon was not found"
   end
 end
