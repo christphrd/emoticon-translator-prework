@@ -11,6 +11,9 @@ def load_library(yml)
   emoticon.each do |meaning,emoticon_array|
     lib_hash[get_meaning] = {emoticon_array[1]=>meaning}
   end
+  binding.pry
+
+  lib_hash
 end
 
 def get_japanese_emoticon
