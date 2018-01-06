@@ -9,7 +9,7 @@ def load_library(yml)
 
   #create inner hashes {jap=>meaning} & {eng=>meaning}
   emoticon.each do |meaning,emoticon_array|
-    lib_hash["get_meaning"] = {emoticon_array[1]=>meaning}
+    lib_hash["get_meaning"][emoticon_array[1]] = meaning
   end
   binding.pry
 
