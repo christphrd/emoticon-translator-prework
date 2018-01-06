@@ -12,7 +12,6 @@ def load_library(yml)
     lib_hash["get_meaning"][emoticon_array[1]] = meaning
     lib_hash["get_emoticon"][emoticon_array[0]] = meaning
   end
-  binding.pry
 
   lib_hash
 end
