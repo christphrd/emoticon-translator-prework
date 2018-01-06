@@ -7,7 +7,7 @@ def load_library(yml)
 
   lib_hash = {"get_meaning"=>{},"get_emoticon"=>{}}
 
-  #create inner hashes {jap=>meaning} & {eng=>meaning}
+  #create inner hashes {jap=>meaning} & {eng=>jap}
   emoticon.each do |meaning,emoticon_array|
     lib_hash["get_meaning"][emoticon_array[1]] = meaning
     lib_hash["get_emoticon"][emoticon_array[0]] = emoticon_array[1]
@@ -17,7 +17,9 @@ def load_library(yml)
 end
 
 def get_japanese_emoticon(yml,emoticon)
-  # code goes here
+  load_library(yml)
+
+
 end
 
 def get_english_meaning
