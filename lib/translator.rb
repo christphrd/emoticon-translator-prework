@@ -27,7 +27,7 @@ end
 
 def get_english_meaning(yml,emoticon)
   lib_hash = load_library(yml)
-  if lib_hash
-    
+  if lib_hash["get_meaning"][emoticon]
+
   end
 end
