@@ -17,9 +17,7 @@ def load_library(yml)
 end
 
 def get_japanese_emoticon(yml,emoticon)
-  load_library(yml)
-
-  lib_hash["get_emoticon"][emoticon]
+  load_library(yml)["get_emoticon"][emoticon]
 end
 
 def get_english_meaning
