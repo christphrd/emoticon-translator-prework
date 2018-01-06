@@ -1,7 +1,8 @@
 require "yaml"
 
-def load_library
+def load_library(thing)
   emoticon = YAML.load_file('emoticons.yml')
+  puts emoticon.inspect
 end
 
 def get_japanese_emoticon
